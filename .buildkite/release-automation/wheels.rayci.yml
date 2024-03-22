@@ -2,6 +2,7 @@ group: Upload & Validate wheels
 steps:
   - label: "Linux x86_64 Python {{matrix}}"
     key: validate-linux-x86_64-wheels
+    depends_on: forge
     job_env: forge
     commands:
       - export PYTHON_VERSION={{matrix}}
