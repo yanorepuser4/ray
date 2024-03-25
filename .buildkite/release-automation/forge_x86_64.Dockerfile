@@ -18,9 +18,9 @@ ln -s /usr/bin/clang-12 /usr/bin/clang
 
 # Install miniconda
 curl -sfL https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh > /tmp/miniconda.sh
-bash /tmp/miniconda.sh -b -u -p /usr/local/bin/miniconda3
+bash /tmp/miniconda.sh -b -u -p /root/miniconda3
 rm /tmp/miniconda.sh
-/usr/local/bin/miniconda3/bin/conda init bash
+/root/miniconda3/bin/conda init bash
 
 # Install Bazelisk
 curl -L https://github.com/bazelbuild/bazelisk/releases/download/v1.19.0/bazelisk-linux-amd64 --output /usr/local/bin/bazelisk
@@ -33,7 +33,6 @@ adduser --home /home/forge --uid 2000 forge --gid 100
 
 EOF
 
-USER forge
 ENV CC=clang
 ENV CXX=clang++-12
 ENV USE_BAZEL_VERSION=5.4.1
