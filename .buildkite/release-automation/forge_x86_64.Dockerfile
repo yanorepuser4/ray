@@ -3,7 +3,6 @@
 FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PATH="/home/forge/.local/bin:${PATH}"
 
 RUN <<EOF
 #!/bin/bash
@@ -34,7 +33,6 @@ adduser --home /home/forge --uid 2000 forge --gid 100
 EOF
 
 USER forge
-ENV PATH="/home/forge/.local/bin:${PATH}"
 ENV CC=clang
 ENV CXX=clang++-12
 ENV USE_BAZEL_VERSION=5.4.1
