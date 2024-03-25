@@ -16,11 +16,13 @@ apt-get install -y curl zip clang-12 git
 
 ln -s /usr/bin/clang-12 /usr/bin/clang
 
+
+
 # Install miniconda
 curl -sfL https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh > /tmp/miniconda.sh
-bash /tmp/miniconda.sh -b -u -p /root/miniconda3
+bash /tmp/miniconda.sh -b -u -p /usr/local/bin/miniconda3
 rm /tmp/miniconda.sh
-/root/miniconda3/bin/conda init bash
+/usr/local/bin/miniconda3/bin/conda init bash
 
 # Install Bazelisk
 curl -L https://github.com/bazelbuild/bazelisk/releases/download/v1.19.0/bazelisk-linux-amd64 --output /usr/local/bin/bazelisk
@@ -30,11 +32,13 @@ ln -s /usr/local/bin/bazelisk /usr/local/bin/bazel
 
 # A non-root user. Use 2000, which is the same as our buildkite agent VM uses.
 adduser --home /home/forge --uid 2000 forge --gid 100
+usermod -a -G docker0 forge
+usermod -a -G docker forge
 
 EOF
 
 USER forge
-ENV PATH="/root/miniconda3/bin:/home/forge/.local/bin:${PATH}"
+ENV PATH="/home/forge/.local/bin:${PATH}"
 ENV CC=clang
 ENV CXX=clang++-12
 ENV USE_BAZEL_VERSION=5.4.1
