@@ -16,7 +16,10 @@ apt-get install -y curl zip clang-12 git
 
 ln -s /usr/bin/clang-12 /usr/bin/clang
 
-
+# Needs to be synchronized to the host group id as we map /var/run/docker.sock
+# into the container.
+addgroup --gid 1001 docker0  # Used on old buildkite AMIs.
+addgroup --gid 993 docker
 
 # Install miniconda
 curl -sfL https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh > /tmp/miniconda.sh
