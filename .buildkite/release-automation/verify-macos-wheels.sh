@@ -33,7 +33,9 @@ install_bazel() {
 }
 
 install_miniconda() {
+    echo "PATH: "
     echo $PATH
+    echo "Existing conda version: "
     conda --version
     # Install miniconda3 based on the architecture used
     mkdir -p "$TMP_DIR/miniconda3"
@@ -53,10 +55,13 @@ run_sanity_check() {
     local python_version="$1"
     conda create -n "rayio_${python_version}" python="${python_version}" -y
     conda activate "rayio_${python_version}"
+    echo "Python and pip version"
     python --version
     pip --version
+    echo "python and pip path"
     which python
     which pip
+    echo "after Conda version"
     conda --version
     export $PATH
     pip install \
