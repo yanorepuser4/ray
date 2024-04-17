@@ -51,6 +51,10 @@ run_sanity_check() {
     local python_version="$1"
     conda create -n "rayio_${python_version}" python="${python_version}" -y
     conda activate "rayio_${python_version}"
+    python --version
+    pip --version
+    which python
+    which pip
     pip install \
         --index-url https://test.pypi.org/simple/ \
         --extra-index-url https://pypi.org/simple \
