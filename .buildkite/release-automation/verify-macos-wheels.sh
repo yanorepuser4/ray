@@ -57,6 +57,8 @@ run_sanity_check() {
     pip --version
     which python
     which pip
+    conda --version
+    export $PATH
     pip install \
         --index-url https://test.pypi.org/simple/ \
         --extra-index-url https://pypi.org/simple \
