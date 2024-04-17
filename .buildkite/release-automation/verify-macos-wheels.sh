@@ -40,7 +40,7 @@ install_miniconda() {
     conda --version
     # Install miniconda3 based on the architecture used
     mkdir -p "$TMP_DIR/miniconda3"
-    curl https://repo.anaconda.com/miniconda/Miniconda3-py39_23.1.0-1-MacOSX-"$mac_architecture".sh -o "$TMP_DIR/miniconda3/miniconda.sh"
+    curl https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-MacOSX-"$mac_architecture".sh -o "$TMP_DIR/miniconda3/miniconda.sh"
     bash "$TMP_DIR/miniconda3/miniconda.sh" -b -u -p "$TMP_DIR/miniconda3"
     rm -rf "$TMP_DIR/miniconda3/miniconda.sh"
 
