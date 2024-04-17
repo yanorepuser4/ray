@@ -32,6 +32,7 @@ install_bazel() {
     chmod +x "${TARGET}"
 }
 
+
 install_miniconda() {
     cat ~/.bash_profile
     echo "PATH: "
@@ -44,8 +45,6 @@ install_miniconda() {
     bash "$TMP_DIR/miniconda3/miniconda.sh" -b -u -p "$TMP_DIR/miniconda3"
     rm -rf "$TMP_DIR/miniconda3/miniconda.sh"
 
-    # Add miniconda3 to the PATH to use `conda` command.
-    export PATH="$TMP_DIR/miniconda3/bin:$PATH"
 
     # Initialize conda. This replaces calling `conda init bash`.
     # Conda init command requires a shell restart which should not be done on BK.
@@ -56,7 +55,6 @@ run_sanity_check() {
     local python_version="$1"
     conda create -n "rayio_${python_version}" python="${python_version}" -y
     conda activate "rayio_${python_version}"
-    export PATH="$TMP_DIR/miniconda3/envs/rayio_${python_version}/bin:$PATH"
     echo "Python and pip version"
     python --version
     pip --version
