@@ -49,6 +49,7 @@ install_miniconda() {
     # Initialize conda. This replaces calling `conda init bash`.
     # Conda init command requires a shell restart which should not be done on BK.
     source "$TMP_DIR/miniconda3/etc/profile.d/conda.sh"
+    conda="$TMP_DIR/miniconda3/bin/conda"
 }
 
 run_sanity_check() {
