@@ -56,6 +56,8 @@ run_sanity_check() {
     local python_version="$1"
     conda create -n "rayio_${python_version}" python="${python_version}" -y
     conda activate "rayio_${python_version}"
+    conda remove -y python || true
+    conda install -y python="${python_version}"
     echo "Python and pip version"
     python --version
     pip --version
