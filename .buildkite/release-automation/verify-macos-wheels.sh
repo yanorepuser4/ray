@@ -56,6 +56,7 @@ run_sanity_check() {
     local python_version="$1"
     conda create -n "rayio_${python_version}" python="${python_version}" -y
     conda activate "rayio_${python_version}"
+    export PATH="$TMP_DIR/miniconda3/envs/rayio_${python_version}/bin:$PATH"
     echo "Python and pip version"
     python --version
     pip --version
