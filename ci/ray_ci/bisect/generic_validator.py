@@ -45,6 +45,12 @@ class GenericValidator(Validator):
 
     def run(self, test: Test, revision: str) -> bool:
         buildkite = self._get_buildkite()
+        ray_ci_select = self._get_rayci_select(test)
+        target = test.get_target()
+        logger.info(f"test name: {test.get_name()}")
+        logger.info(f"test target: {target}")
+        logger.info(f"ray ci select: {ray_ci_select}")
+
         build = buildkite.builds().create_build(
             BUILDKITE_ORGANIZATION,
             BUILDKITE_POSTMERGE_PIPELINE,
