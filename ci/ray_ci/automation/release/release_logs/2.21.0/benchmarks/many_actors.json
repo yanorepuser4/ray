@@ -1,0 +1,56 @@
+{
+    "buildkite_job_id": "018f4224-965b-4040-90a2-83f42af65678",
+    "buildkite_url": "https://buildkite.com/ray-project/release/builds/14872#018f4224-965b-4040-90a2-83f42af65678",
+    "cluster_id": "ses_fxtccxxnmv5mue3k6s4hxfhpk3",
+    "cluster_url": "https://console.anyscale-staging.com/o/anyscale-internal/projects/prj_qC3ZfndQWYYjx2cz8KWGNUL4/clusters/ses_fxtccxxnmv5mue3k6s4hxfhpk3",
+    "extra_tags": {
+        "buildkite_job_id": "018f4224-965b-4040-90a2-83f42af65678",
+        "buildkite_pipeline_slug": "release",
+        "buildkite_pull_request": "false",
+        "buildkite_source": "trigger_job",
+        "release_frequency": "nightly-3x",
+        "test_name": "many_actors.aws",
+        "test_smoke_test": "False"
+    },
+    "job_id": "prodjob_lc4i3jevlzyibsxx67jtex6abw",
+    "job_url": "https://console.anyscale-staging.com/o/anyscale-internal/jobs/prodjob_lc4i3jevlzyibsxx67jtex6abw",
+    "last_logs": ":job_id:03000000\n:actor_name:DashboardTester\n500 Server Error: Internal Server Error for url: http://10.0.19.20:8265/logical/actors\nTraceback (most recent call last):\n  File \"/tmp/ray/session_2024-05-04_00-13-09_855649_104/runtime_resources/working_dir_files/s3_ray-release-automation-results_working_dirs_many_actors_aws_rncmblmcwu__anyscale_pkg_91b41db7baa97710ec7519d4a36ac30f/distributed/dashboard_test.py\", line 86, in ping\n    resp.raise_for_status()\n  File \"/home/ray/anaconda3/lib/python3.9/site-packages/requests/models.py\", line 1021, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://10.0.19.20:8265/logical/actors\n",
+    "results": {
+        "_dashboard_memory_usage_mb": 470.708224,
+        "_dashboard_test_success": true,
+        "_peak_memory": 3.72,
+        "_peak_process_memory": "PID\tMEM\tCOMMAND\n178\t1.77GiB\t/home/ray/anaconda3/lib/python3.9/site-packages/ray/core/src/ray/gcs/gcs_server --log_dir=/tmp/ray/s\n1095\t0.95GiB\tpython distributed/test_many_actors.py\n293\t0.3GiB\t/home/ray/anaconda3/bin/python /home/ray/anaconda3/lib/python3.9/site-packages/ray/dashboard/dashboa\n453\t0.07GiB\t/home/ray/anaconda3/bin/python -u /home/ray/anaconda3/lib/python3.9/site-packages/ray/_private/runti\n911\t0.07GiB\tray::JobSupervisor\n612\t0.07GiB\t/home/ray/anaconda3/bin/python /home/ray/anaconda3/bin/jupyter-lab --allow-root --ip=127.0.0.1 --no-\n451\t0.07GiB\t/home/ray/anaconda3/bin/python -u /home/ray/anaconda3/lib/python3.9/site-packages/ray/dashboard/agen\n1157\t0.06GiB\tray::MemoryMonitorActor.run\n1232\t0.05GiB\tray::DashboardTester.run\n392\t0.04GiB\t/home/ray/anaconda3/bin/python -u /home/ray/anaconda3/lib/python3.9/site-packages/ray/_private/log_m",
+        "actors_per_second": 629.465198365166,
+        "num_actors": 10000,
+        "perf_metrics": [
+            {
+                "perf_metric_name": "actors_per_second",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 629.465198365166
+            },
+            {
+                "perf_metric_name": "dashboard_p50_latency_ms",
+                "perf_metric_type": "LATENCY",
+                "perf_metric_value": 161.266
+            },
+            {
+                "perf_metric_name": "dashboard_p95_latency_ms",
+                "perf_metric_type": "LATENCY",
+                "perf_metric_value": 5216.157
+            },
+            {
+                "perf_metric_name": "dashboard_p99_latency_ms",
+                "perf_metric_type": "LATENCY",
+                "perf_metric_value": 5216.157
+            }
+        ],
+        "success": "1",
+        "time": 15.886501789093018
+    },
+    "return_code": 0,
+    "runtime": 443.2687758999999,
+    "smoke_test": false,
+    "stable": true,
+    "status": "success",
+    "wheels_url": null
+}

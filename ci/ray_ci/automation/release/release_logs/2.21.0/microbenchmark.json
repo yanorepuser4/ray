@@ -1,0 +1,307 @@
+{
+    "buildkite_job_id": "018f422b-90a7-4d79-a5e4-0c5953604d21",
+    "buildkite_url": "https://buildkite.com/ray-project/release/builds/14871#018f422b-90a7-4d79-a5e4-0c5953604d21",
+    "cluster_id": "ses_91lc4wypbkqqh8cc8yc9srxquv",
+    "cluster_url": "https://console.anyscale-staging.com/o/anyscale-internal/projects/prj_qC3ZfndQWYYjx2cz8KWGNUL4/clusters/ses_91lc4wypbkqqh8cc8yc9srxquv",
+    "extra_tags": {
+        "buildkite_job_id": "018f422b-90a7-4d79-a5e4-0c5953604d21",
+        "buildkite_pipeline_slug": "release",
+        "buildkite_pull_request": "false",
+        "buildkite_source": "trigger_job",
+        "release_frequency": "nightly",
+        "test_name": "microbenchmark.aws",
+        "test_smoke_test": "False"
+    },
+    "job_id": "prodjob_g5fuynllwyjm1gjq4zyagfdbva",
+    "job_url": "https://console.anyscale-staging.com/o/anyscale-internal/jobs/prodjob_g5fuynllwyjm1gjq4zyagfdbva",
+    "last_logs": "    HTTPServer.server_bind(self)\n  File \"/home/ray/anaconda3/lib/python3.9/http/server.py\", line 137, in server_bind\n    socketserver.TCPServer.server_bind(self)\n  File \"/home/ray/anaconda3/lib/python3.9/socketserver.py\", line 466, in server_bind\n    self.socket.bind(self.server_address)\nOSError: [Errno 98] Address already in use\n2024-05-03 23:01:33,479\tINFO utils.py:112 -- Get all modules by type: DashboardHeadModule\n2024-05-03 23:01:33,912\tINFO utils.py:145 -- Available modules: [<class 'ray.dashboard.modules.actor.actor_head.ActorHead'>, <class 'ray.dashboard.modules.metrics.metrics_head.MetricsHead'>, <class 'ray.dashboard.modules.data.data_head.DataHead'>, <class 'ray.dashboard.modules.event.event_head.EventHead'>, <class 'ray.dashboard.modules.healthz.healthz_head.HealthzHead'>, <class 'ray.dashboard.modules.job.job_head.JobHead'>, <class 'ray.dashboard.modules.node.node_head.NodeHead'>, <class 'ray.dashboard.modules.reporter.reporter_head.ReportHead'>, <class 'ray.dashboard.modules.serve.serve_rest_api_impl.create_serve_rest_api.<locals>.ServeRestApiImpl'>, <class 'ray.dashboard.modules.snapshot.snapshot_head.APIHead'>, <class 'ray.dashboard.modules.state.state_head.StateHead'>, <class 'ray.dashboard.modules.usage_stats.usage_stats_head.UsageStatsHead'>]\n2024-05-03 23:01:33,912\tINFO head.py:223 -- Modules to load: {'MetricsHead', 'NodeHead', 'APIHead', 'DataHead', 'ServeRestApiImpl', 'HealthzHead', 'UsageStatsHead', 'JobHead', 'StateHead', 'EventHead', 'ReportHead', 'ActorHead'}\n2024-05-03 23:01:33,912\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.actor.actor_head.ActorHead'>\n2024-05-03 23:01:33,912\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.metrics.metrics_head.MetricsHead'>\n2024-05-03 23:01:33,912\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.data.data_head.DataHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.event.event_head.EventHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.healthz.healthz_head.HealthzHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.job.job_head.JobHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.node.node_head.NodeHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.reporter.reporter_head.ReportHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.serve.serve_rest_api_impl.create_serve_rest_api.<locals>.ServeRestApiImpl'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.snapshot.snapshot_head.APIHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.state.state_head.StateHead'>\n2024-05-03 23:01:33,913\tINFO head.py:226 -- Loading DashboardHeadModule: <class 'ray.dashboard.modules.usage_stats.usage_stats_head.UsageStatsHead'>\n2024-05-03 23:01:33,913\tINFO head.py:239 -- Loaded 12 modules. [<ray.dashboard.modules.actor.actor_head.ActorHead object at 0x7de9a489cf10>, <ray.dashboard.modules.metrics.metrics_head.MetricsHead object at 0x7de9a489cee0>, <ray.dashboard.modules.data.data_head.DataHead object at 0x7de9965a1340>, <ray.dashboard.modules.event.event_head.EventHead object at 0x7de9965a1520>, <ray.dashboard.modules.healthz.healthz_head.HealthzHead object at 0x7de9965a14f0>, <ray.dashboard.modules.job.job_head.JobHead object at 0x7de9965a1730>, <ray.dashboard.modules.node.node_head.NodeHead object at 0x7de9965a1790>, <ray.dashboard.modules.reporter.reporter_head.ReportHead object at 0x7de9965a17c0>, <ray.dashboard.modules.serve.serve_rest_api_impl.create_serve_rest_api.<locals>.ServeRestApiImpl object at 0x7de9965a1af0>, <ray.dashboard.modules.snapshot.snapshot_head.APIHead object at 0x7de9965a1c10>, <ray.dashboard.modules.state.state_head.StateHead object at 0x7de9965a1c40>, <ray.dashboard.modules.usage_stats.usage_stats_head.UsageStatsHead object at 0x7de9965a1d90>]\n2024-05-03 23:01:33,913\tINFO head.py:329 -- Initialize the http server.\n2024-05-03 23:01:33,914\tINFO http_server_head.py:81 -- Setup static dir for dashboard: /home/ray/anaconda3/lib/python3.9/site-packages/ray/dashboard/client/build\n2024-05-03 23:01:33,918\tWARNING http_server_head.py:237 -- Try to use port 8266: [Errno 98] error while attempting to bind on address ('127.0.0.1', 8265): address already in use\n2024-05-03 23:01:33,918\tINFO http_server_head.py:249 -- Dashboard head http address: 127.0.0.1:8266\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /logical/actors> -> <function ActorHead.get_all_actors[cache ttl=2, max_size=128] at 0x7de99fb87280>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /logical/actors/{actor_id}> -> <function ActorHead.get_actor[cache ttl=2, max_size=128] at 0x7de99fb87430>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/grafana_health> -> <function MetricsHead.grafana_health at 0x7de99e56d940>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/prometheus_health> -> <function MetricsHead.prometheus_health at 0x7de99e56da60>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/data/datasets/{job_id}> -> <function DataHead.get_datasets at 0x7de99e56dee0>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /events> -> <function EventHead.get_event[cache ttl=2, max_size=128] at 0x7de99e502a60>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/gcs_healthz> -> <function HealthzHead.health_check at 0x7de99e506790>\n2024-05-03 23:01:33,918\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/version> -> <function JobHead.get_version at 0x7de99cd613a0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/packages/{protocol}/{package_name}> -> <function JobHead.get_package at 0x7de99cd614c0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [PUT] <DynamicResource  /api/packages/{protocol}/{package_name}> -> <function JobHead.upload_package at 0x7de99cd615e0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [POST] <PlainResource  /api/jobs/> -> <function JobHead.submit_job at 0x7de99cd61700>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [POST] <DynamicResource  /api/jobs/{job_or_submission_id}/stop> -> <function JobHead.stop_job at 0x7de99cd61820>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [DELETE] <DynamicResource  /api/jobs/{job_or_submission_id}> -> <function JobHead.delete_job at 0x7de99cd61940>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/jobs/{job_or_submission_id}> -> <function JobHead.get_job_info at 0x7de99cd61a60>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/jobs/> -> <function JobHead.list_jobs at 0x7de99cd61b80>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/jobs/{job_or_submission_id}/logs> -> <function JobHead.get_job_logs at 0x7de99cd61ca0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/jobs/{job_or_submission_id}/logs/tail> -> <function JobHead.tail_job_logs at 0x7de99cd61dc0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /internal/node_module> -> <function NodeHead.get_node_module_internal_state at 0x7de997bd70d0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /nodes> -> <function NodeHead.get_all_nodes[cache ttl=2, max_size=128] at 0x7de997bd7280>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /nodes/{node_id}> -> <function NodeHead.get_node[cache ttl=2, max_size=128] at 0x7de997bd7430>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/cluster_metadata> -> <function ReportHead.get_cluster_metadata at 0x7de9965f51f0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/cluster_status> -> <function ReportHead.get_cluster_status at 0x7de9965f5310>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /task/traceback> -> <function ReportHead.get_task_traceback at 0x7de9965f5550>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /task/cpu_profile> -> <function ReportHead.get_task_cpu_profile at 0x7de9965f5670>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /worker/traceback> -> <function ReportHead.get_traceback at 0x7de9965f5790>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /worker/cpu_profile> -> <function ReportHead.cpu_profile at 0x7de9965f58b0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /memory_profile> -> <function ReportHead.memory_profile at 0x7de9965f59d0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/ray/version> -> <function create_serve_rest_api.<locals>.ServeRestApiImpl.get_version at 0x7de99657ef70>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/serve/applications/> -> <function create_serve_rest_api.<locals>.ServeRestApiImpl.get_serve_instance_details at 0x7de996583040>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [DELETE] <PlainResource  /api/serve/applications/> -> <function create_serve_rest_api.<locals>.ServeRestApiImpl.delete_serve_applications at 0x7de996583280>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [PUT] <PlainResource  /api/serve/applications/> -> <function create_serve_rest_api.<locals>.ServeRestApiImpl.put_all_applications at 0x7de996583430>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/actors/kill> -> <function APIHead.kill_actor_gcs at 0x7de99658a1f0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/component_activities> -> <function APIHead.get_component_activities at 0x7de99658a310>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/actors> -> <function StateHead.list_actors at 0x7de996594280>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/jobs> -> <function StateHead.list_jobs at 0x7de996594430>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/nodes> -> <function StateHead.list_nodes at 0x7de9965945e0>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/placement_groups> -> <function StateHead.list_placement_groups at 0x7de996594790>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/workers> -> <function StateHead.list_workers at 0x7de996594940>\n2024-05-03 23:01:33,919\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/tasks> -> <function StateHead.list_tasks at 0x7de996594af0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/objects> -> <function StateHead.list_objects at 0x7de996594ca0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/runtime_envs> -> <function StateHead.list_runtime_envs at 0x7de996594e50>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/cluster_events> -> <function StateHead.list_cluster_events at 0x7de996598040>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/logs> -> <function StateHead.list_logs at 0x7de9965981f0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/v0/logs/{media_type}> -> <function StateHead.get_logs at 0x7de9965983a0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/tasks/summarize> -> <function StateHead.summarize_tasks at 0x7de9965985e0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/actors/summarize> -> <function StateHead.summarize_actors at 0x7de996598790>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/objects/summarize> -> <function StateHead.summarize_objects at 0x7de996598940>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /api/v0/tasks/timeline> -> <function StateHead.tasks_timeline at 0x7de996598af0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <DynamicResource  /api/v0/delay/{delay_s}> -> <function StateHead.delayed_response at 0x7de996598c10>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /usage_stats_enabled> -> <function UsageStatsHead.get_usage_stats_enabled at 0x7de9965a2160>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /> -> <function HttpServerDashboardHead.get_index at 0x7de9965a2af0>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <PlainResource  /favicon.ico> -> <function HttpServerDashboardHead.get_favicon at 0x7de9965a2c10>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:255 -- <ResourceRoute [GET] <StaticResource  /static -> PosixPath('/home/ray/anaconda3/lib/python3.9/site-packages/ray/dashboard/client/build/static')> -> <bound method StaticResource._handle of <StaticResource  /static -> PosixPath('/home/ray/anaconda3/lib/python3.9/site-packages/ray/dashboard/client/build/static')>>\n2024-05-03 23:01:33,920\tINFO http_server_head.py:256 -- Registered 53 routes.\n2024-05-03 23:01:33,920\tINFO head.py:332 -- http server initialized at 127.0.0.1:8266\n2024-05-03 23:01:33,971\tINFO event_utils.py:132 -- Monitor events logs modified after 1714800693.5802903 on /tmp/ray/session_2024-05-03_23-01-31_946842_5403/logs/events, the source types are all.\n2024-05-03 23:01:33,973\tINFO usage_stats_head.py:195 -- Usage reporting is enabled.\n2024-05-03 23:01:33,973\tINFO actor_head.py:101 -- Getting all actor info from GCS.\n2024-05-03 23:01:33,978\tINFO actor_head.py:123 -- Received 0 actor info from GCS.\n2024-05-03 23:02:34,088\tINFO usage_stats_head.py:137 -- Usage report request failed. 500 Server Error: Internal Server Error for url: https://usage-stats.ray.io/\n2024-05-03 23:12:48,138\tERROR node_head.py:386 -- Cannot reach the node, 18cfd535edd635a16a53bd29aa3f23eaa4f67db16d5325ce38cd814b. The node may have been terminated.\nNoneType: None\n2024-05-03 23:12:48,166\tINFO event_utils.py:170 -- Found new event log file: /tmp/ray/session_2024-05-03_23-01-31_946842_5403/logs/events/event_RAYLET.log\n2024-05-03 23:12:48,392\tWARNING dashboard.py:236 -- Exiting with SIGTERM immediately...\n",
+    "results": {
+        "1_1_actor_calls_async": [
+            9231.13205434199,
+            263.23898948509276
+        ],
+        "1_1_actor_calls_concurrent": [
+            5207.403165869952,
+            44.363883963423724
+        ],
+        "1_1_actor_calls_sync": [
+            2094.875118026067,
+            33.96019620496728
+        ],
+        "1_1_async_actor_calls_async": [
+            3679.273214565456,
+            72.42820449471026
+        ],
+        "1_1_async_actor_calls_sync": [
+            1349.154883528484,
+            21.478859920081618
+        ],
+        "1_1_async_actor_calls_with_args_async": [
+            2441.3295492788307,
+            48.57379450168428
+        ],
+        "1_n_actor_calls_async": [
+            8687.002823855231,
+            263.0731079571473
+        ],
+        "1_n_async_actor_calls_async": [
+            7616.288181387119,
+            187.30135931998024
+        ],
+        "client__1_1_actor_calls_async": [
+            995.1941800794589,
+            4.386299177532235
+        ],
+        "client__1_1_actor_calls_concurrent": [
+            981.3610689913281,
+            9.343552920040837
+        ],
+        "client__1_1_actor_calls_sync": [
+            529.2817511036485,
+            5.002896995984588
+        ],
+        "client__get_calls": [
+            1102.784805636512,
+            59.49715189608496
+        ],
+        "client__put_calls": [
+            803.6907933267912,
+            28.6991879671622
+        ],
+        "client__put_gigabytes": [
+            0.13000377813880426,
+            0.00045634709726433836
+        ],
+        "client__tasks_and_get_batch": [
+            0.8943766187635083,
+            0.034668794224519045
+        ],
+        "client__tasks_and_put_batch": [
+            11618.996288906874,
+            99.68395835168926
+        ],
+        "multi_client_put_calls_Plasma_Store": [
+            12378.76716587138,
+            105.91623157084351
+        ],
+        "multi_client_put_gigabytes": [
+            32.127583473661076,
+            3.029765850786339
+        ],
+        "multi_client_tasks_async": [
+            23246.18514733561,
+            3349.0269090731435
+        ],
+        "n_n_actor_calls_async": [
+            26644.201721023048,
+            1301.4894705420318
+        ],
+        "n_n_actor_calls_with_arg_async": [
+            2704.4738249461293,
+            44.69261442727767
+        ],
+        "n_n_async_actor_calls_async": [
+            22642.233725461258,
+            846.0443551175905
+        ],
+        "perf_metrics": [
+            {
+                "perf_metric_name": "single_client_get_calls_Plasma_Store",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 10556.167569431133
+            },
+            {
+                "perf_metric_name": "single_client_put_calls_Plasma_Store",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 5299.4573652671415
+            },
+            {
+                "perf_metric_name": "multi_client_put_calls_Plasma_Store",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 12378.76716587138
+            },
+            {
+                "perf_metric_name": "single_client_put_gigabytes",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 21.31655252094265
+            },
+            {
+                "perf_metric_name": "single_client_tasks_and_get_batch",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 7.929465173212371
+            },
+            {
+                "perf_metric_name": "multi_client_put_gigabytes",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 32.127583473661076
+            },
+            {
+                "perf_metric_name": "single_client_get_object_containing_10k_refs",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 13.52171763582945
+            },
+            {
+                "perf_metric_name": "single_client_wait_1k_refs",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 5.483630802920898
+            },
+            {
+                "perf_metric_name": "single_client_tasks_sync",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 1002.8196875307303
+            },
+            {
+                "perf_metric_name": "single_client_tasks_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 7813.472406257602
+            },
+            {
+                "perf_metric_name": "multi_client_tasks_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 23246.18514733561
+            },
+            {
+                "perf_metric_name": "1_1_actor_calls_sync",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 2094.875118026067
+            },
+            {
+                "perf_metric_name": "1_1_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 9231.13205434199
+            },
+            {
+                "perf_metric_name": "1_1_actor_calls_concurrent",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 5207.403165869952
+            },
+            {
+                "perf_metric_name": "1_n_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 8687.002823855231
+            },
+            {
+                "perf_metric_name": "n_n_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 26644.201721023048
+            },
+            {
+                "perf_metric_name": "n_n_actor_calls_with_arg_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 2704.4738249461293
+            },
+            {
+                "perf_metric_name": "1_1_async_actor_calls_sync",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 1349.154883528484
+            },
+            {
+                "perf_metric_name": "1_1_async_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 3679.273214565456
+            },
+            {
+                "perf_metric_name": "1_1_async_actor_calls_with_args_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 2441.3295492788307
+            },
+            {
+                "perf_metric_name": "1_n_async_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 7616.288181387119
+            },
+            {
+                "perf_metric_name": "n_n_async_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 22642.233725461258
+            },
+            {
+                "perf_metric_name": "placement_group_create/removal",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 850.9214104369318
+            },
+            {
+                "perf_metric_name": "client__get_calls",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 1102.784805636512
+            },
+            {
+                "perf_metric_name": "client__put_calls",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 803.6907933267912
+            },
+            {
+                "perf_metric_name": "client__put_gigabytes",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 0.13000377813880426
+            },
+            {
+                "perf_metric_name": "client__tasks_and_put_batch",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 11618.996288906874
+            },
+            {
+                "perf_metric_name": "client__1_1_actor_calls_sync",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 529.2817511036485
+            },
+            {
+                "perf_metric_name": "client__1_1_actor_calls_async",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 995.1941800794589
+            },
+            {
+                "perf_metric_name": "client__1_1_actor_calls_concurrent",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 981.3610689913281
+            },
+            {
+                "perf_metric_name": "client__tasks_and_get_batch",
+                "perf_metric_type": "THROUGHPUT",
+                "perf_metric_value": 0.8943766187635083
+            }
+        ],
+        "placement_group_create/removal": [
+            850.9214104369318,
+            5.605433178895902
+        ],
+        "single_client_get_calls_Plasma_Store": [
+            10556.167569431133,
+            77.93663750708814
+        ],
+        "single_client_get_object_containing_10k_refs": [
+            13.52171763582945,
+            0.3330930424042106
+        ],
+        "single_client_put_calls_Plasma_Store": [
+            5299.4573652671415,
+            104.7895646656126
+        ],
+        "single_client_put_gigabytes": [
+            21.31655252094265,
+            5.502507789355352
+        ],
+        "single_client_tasks_and_get_batch": [
+            7.929465173212371,
+            0.27204560133861755
+        ],
+        "single_client_tasks_async": [
+            7813.472406257602,
+            464.56634150141537
+        ],
+        "single_client_tasks_sync": [
+            1002.8196875307303,
+            15.63104006816665
+        ],
+        "single_client_wait_1k_refs": [
+            5.483630802920898,
+            0.0715962099275209
+        ]
+    },
+    "return_code": 0,
+    "runtime": 1303.7141935490001,
+    "smoke_test": false,
+    "stable": true,
+    "status": "success",
+    "wheels_url": null
+}

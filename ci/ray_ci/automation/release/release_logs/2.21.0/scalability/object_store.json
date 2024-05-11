@@ -1,0 +1,37 @@
+{
+    "buildkite_job_id": "018f422b-90df-4992-931f-fde6441b7502",
+    "buildkite_url": "https://buildkite.com/ray-project/release/builds/14871#018f422b-90df-4992-931f-fde6441b7502",
+    "cluster_id": "ses_k9q9s9btsfgg2k38k1hbx1csh1",
+    "cluster_url": "https://console.anyscale-staging.com/o/anyscale-internal/projects/prj_qC3ZfndQWYYjx2cz8KWGNUL4/clusters/ses_k9q9s9btsfgg2k38k1hbx1csh1",
+    "extra_tags": {
+        "buildkite_job_id": "018f422b-90df-4992-931f-fde6441b7502",
+        "buildkite_pipeline_slug": "release",
+        "buildkite_pull_request": "false",
+        "buildkite_source": "trigger_job",
+        "release_frequency": "nightly",
+        "test_name": "object_store.aws",
+        "test_smoke_test": "False"
+    },
+    "job_id": "prodjob_611531sywnkjg1ikjbysq4mbdq",
+    "job_url": "https://console.anyscale-staging.com/o/anyscale-internal/jobs/prodjob_611531sywnkjg1ikjbysq4mbdq",
+    "last_logs": "bash: cannot set terminal process group (-1): Inappropriate ioctl for device\nbash: no job control in this shell\n[W 2024-05-03 23:24:50.905 ServerApp] jupyter_server_terminals | error adding extension (enabled: True): Jupyter Server Terminals requires Jupyter Server 2.0+\n    Traceback (most recent call last):\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/jupyter_server/extension/manager.py\", line 320, in add_extension\n        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/jupyter_server/extension/manager.py\", line 166, in __init__\n        super().__init__(*args, **kwargs)\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/traitlets/traitlets.py\", line 1371, in __init__\n        value = self._traits[key]._cross_validate(self, getattr(self, key))\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/traitlets/traitlets.py\", line 732, in _cross_validate\n        value = obj._trait_validators[self.name](obj, proposal)\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/traitlets/traitlets.py\", line 1243, in __call__\n        return self.func(*args, **kwargs)\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/jupyter_server/extension/manager.py\", line 175, in _validate_name\n        self._module, self._metadata = get_metadata(name)\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/jupyter_server/extension/utils.py\", line 60, in get_metadata\n        module = importlib.import_module(package_name)\n      File \"/home/ray/anaconda3/lib/python3.9/importlib/__init__.py\", line 127, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1030, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1007, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 986, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 680, in _load_unlocked\n      File \"<frozen importlib._bootstrap_external>\", line 850, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 228, in _call_with_frames_removed\n      File \"/home/ray/anaconda3/lib/python3.9/site-packages/jupyter_server_terminals/__init__.py\", line 9, in <module>\n        raise RuntimeError(\"Jupyter Server Terminals requires Jupyter Server 2.0+\")\n    RuntimeError: Jupyter Server Terminals requires Jupyter Server 2.0+\n[I 2024-05-03 23:24:51.239 ServerApp] jupyter_server_fileid | extension was successfully linked.\n[I 2024-05-03 23:24:51.244 ServerApp] jupyter_server_ydoc | extension was successfully linked.\n[W 2024-05-03 23:24:51.246 LabApp] 'allow_remote_access' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.\n[W 2024-05-03 23:24:51.246 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.\n[W 2024-05-03 23:24:51.246 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.\n[W 2024-05-03 23:24:51.246 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.\n[I 2024-05-03 23:24:51.250 ServerApp] jupyterlab | extension was successfully linked.\n[I 2024-05-03 23:24:51.250 ServerApp] jupytext | extension was successfully linked.\n[I 2024-05-03 23:24:51.254 ServerApp] nbclassic | extension was successfully linked.\n[I 2024-05-03 23:24:51.255 ServerApp] Writing Jupyter server cookie secret to /home/ray/.local/share/jupyter/runtime/jupyter_cookie_secret\n[I 2024-05-03 23:24:51.553 ServerApp] notebook_shim | extension was successfully linked.\n[W 2024-05-03 23:24:51.581 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.\n[I 2024-05-03 23:24:51.583 ServerApp] notebook_shim | extension was successfully loaded.\n[I 2024-05-03 23:24:51.583 FileIdExtension] Configured File ID manager: ArbitraryFileIdManager\n[I 2024-05-03 23:24:51.584 FileIdExtension] ArbitraryFileIdManager : Configured root dir: /home/ray/default\n[I 2024-05-03 23:24:51.584 FileIdExtension] ArbitraryFileIdManager : Configured database path: /home/ray/.local/share/jupyter/file_id_manager.db\n[I 2024-05-03 23:24:51.584 FileIdExtension] ArbitraryFileIdManager : Successfully connected to database file.\n[I 2024-05-03 23:24:51.584 FileIdExtension] ArbitraryFileIdManager : Creating File ID tables and indices with journal_mode = DELETE\n[I 2024-05-03 23:24:51.662 ServerApp] jupyter_server_fileid | extension was successfully loaded.\n[I 2024-05-03 23:24:51.663 ServerApp] jupyter_server_ydoc | extension was successfully loaded.\n[I 2024-05-03 23:24:51.666 LabApp] JupyterLab extension loaded from /home/ray/anaconda3/lib/python3.9/site-packages/jupyterlab\n[I 2024-05-03 23:24:51.666 LabApp] JupyterLab application directory is /home/ray/anaconda3/share/jupyter/lab\n[I 2024-05-03 23:24:51.670 ServerApp] jupyterlab | extension was successfully loaded.\n[I 2024-05-03 23:24:51.670 ServerApp] [Jupytext Server Extension] Deriving a JupytextContentsManager from LargeFileManager\n[I 2024-05-03 23:24:51.671 ServerApp] jupytext | extension was successfully loaded.\n[I 2024-05-03 23:24:51.676 ServerApp] nbclassic | extension was successfully loaded.\n[I 2024-05-03 23:24:51.676 ServerApp] Serving notebooks from local directory: /home/ray/default\n[I 2024-05-03 23:24:51.676 ServerApp] Jupyter Server 1.24.0 is running at:\n[I 2024-05-03 23:24:51.676 ServerApp] http://127.0.0.1:8999/jupyter/lab\n[I 2024-05-03 23:24:51.676 ServerApp]  or http://127.0.0.1:8999/jupyter/lab\n[I 2024-05-03 23:24:51.676 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).\n",
+    "results": {
+        "broadcast_time": 15.136383380999973,
+        "num_nodes": 50,
+        "object_size": 1073741824,
+        "perf_metrics": [
+            {
+                "perf_metric_name": "time_to_broadcast_1073741824_bytes_to_50_nodes",
+                "perf_metric_type": "LATENCY",
+                "perf_metric_value": 15.136383380999973
+            }
+        ],
+        "success": "1"
+    },
+    "return_code": 0,
+    "runtime": 839.928100748,
+    "smoke_test": false,
+    "stable": true,
+    "status": "success",
+    "wheels_url": null
+}
