@@ -27,8 +27,8 @@ BUILDKITE_BUILD_FAILING_STATE = [
     "canceling",
     "not_run",
 ]
-TIMEOUT = 2 * 60 * 60  # 2 hours
-WAIT = 10  # 10 seconds
+TIMEOUT = 4 * 60 * 60  # 2 hours
+WAIT = 60  # 10 seconds
 
 
 class GenericValidator(Validator):
@@ -53,6 +53,7 @@ class GenericValidator(Validator):
             message=f"[bisection] running single test: {test.get_name()}",
             env={
                 "RAYCI_SELECT": self._get_rayci_select(test),
+                "RAYCI_CONTINUOUS_BUILD": "1",
                 "RAYCI_BISECT_TEST_TARGET": test.get_target(),
             },
         )
