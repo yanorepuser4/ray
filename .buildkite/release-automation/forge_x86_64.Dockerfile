@@ -11,7 +11,7 @@ set -euo pipefail
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y curl zip clang-12 git
+apt-get install -y curl zip clang-12 git python-is-python3 python3-pip
 
 # Needs to be synchronized to the host group id as we map /var/run/docker.sock
 # into the container.
