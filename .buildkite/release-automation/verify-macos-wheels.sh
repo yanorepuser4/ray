@@ -17,6 +17,21 @@ fi
 mac_architecture=$1 # First argument is the architecture of the machine, e.g. x86_64, arm64
 export USE_BAZEL_VERSION="${USE_BAZEL_VERSION:-5.4.1}"
 
+get_ray_version() {
+    VERSION=$(python python/ray/_version.py | awk '{print $1}')
+    if [[ "$VERSION" == "3.0.0.dev0" ]]; then
+        echo "Not a release version. Exiting.." >&2
+        exit 1
+    fi
+    echo "$VERSION"
+}
+
+if [[ -z "$RAY_VERSION" ]]; then
+    FETCHED_RAY_VERSION=$(get_ray_version)
+    export RAY_VERSION="${FETCHED_RAY_VERSION}"
+fi
+
+
 install_bazel() {
     if [[ "${mac_architecture}" = "arm64" ]]; then
         URL="https://github.com/bazelbuild/bazelisk/releases/download/${BAZELISK_VERSION}/bazelisk-darwin-arm64"

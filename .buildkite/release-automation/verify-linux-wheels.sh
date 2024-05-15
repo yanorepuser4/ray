@@ -5,10 +5,21 @@ set -euo pipefail
 set -x
 
 export PYTHON_VERSION="${PYTHON_VERSION}"
+
+get_ray_version() {
+    VERSION=$(python python/ray/_version.py | awk '{print $1}')
+    if [[ "$VERSION" == "3.0.0.dev0" ]]; then
+        echo "Not a release version. Exiting.." >&2
+        exit 1
+    fi
+    echo "$VERSION"
+}
+
 if [[ -z "$RAY_VERSION" ]]; then
-    echo "RAY_VERSION environment variable is not set"
-    exit 1
+    FETCHED_RAY_VERSION=$(get_ray_version)
+    export RAY_VERSION="${FETCHED_RAY_VERSION}"
 fi
+
 if [[ -z "$BUILDKITE_COMMIT" ]]; then
     echo "BUILDKITE_COMMIT environment variable is not set"
     exit 1
