@@ -65,8 +65,8 @@ steps:
     tags:
       - skip-on-premerge
       - oss
-    if: build.branch == "master"
     instance_type: small
+    key: microcheck_test_coverage
     commands:
       - bazel run //ci/ray_ci/automation:determine_microcheck_tests -- {{matrix}} 100 --test-prefix linux:__ --production
       # we use master branch to determine microcheck tests for darwin and windows, because darwin and windows tests do not run on premerge branches
