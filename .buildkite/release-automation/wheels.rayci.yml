@@ -90,6 +90,6 @@ steps:
     instance_type: small_branch
     commands:
       - bazel run //ci/ray_ci/automation:upload_wheels_pypi -- 
-        --ray_version="$RAY_VERSION" 
-        --commit_hash="$BUILDKITE_COMMIT" 
+        --ray_version="2.23.0" 
+        --commit_hash="a0947ead5cd94b3d8ca5cdeb9422dccb12d03867" 
         --pypi_env=prod
