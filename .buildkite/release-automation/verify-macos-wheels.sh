@@ -51,10 +51,10 @@ run_sanity_check() {
     pip install \
         --index-url https://test.pypi.org/simple/ \
         --extra-index-url https://pypi.org/simple \
-        "ray[cpp]==$RAY_VERSION"
+        "ray[cpp]==2.23.0"
     (
         cd release/util
-        python sanity_check.py --ray_version="$RAY_VERSION" --ray_commit="$BUILDKITE_COMMIT"
+        python sanity_check.py --ray_version="2.23.0" --ray_commit="a0947ead5cd94b3d8ca5cdeb9422dccb12d03867"
         bash sanity_check_cpp.sh
     )
     conda deactivate
