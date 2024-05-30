@@ -50,6 +50,7 @@ class Autodoc:
         if self._autodoc_rsts:
             return self._autodoc_rsts
 
+        self._autodoc_rsts.append(self._head_rst_file)
         dir = os.path.dirname(self._head_rst_file)
         with open(self._head_rst_file, "r") as f:
             for line in f:
